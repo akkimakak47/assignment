@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.gallery {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1px; /* Compensate for border to prevent container from stretching */
+    background-color: #090909;
+
+}
+
+.gallery-item {
+    flex: 0 0 calc(33.33% - 2px); /* Adjust the width of the gallery items with spacing */
+    box-sizing: border-box;
+    margin: 1px; /* Add 1px space around each image */
+}
+
+.gallery-item img {
+    width: 130%;
+    height: 250px;
+    margin: 10px;
+    padding: 5px;
+}
+.sidebar {
+    flex: 0 0 20%; /* Adjust the width of the sidebar */
+    background-color: #060505;
+    padding: 20px;
+    box-sizing: border-box;
+}
+h1{
+    color: rgb(247, 241, 241);
+}
+h2{
+    color: red;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+h3 {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: aliceblue;
+    display: block; /* Make the anchor tag a block element */
+}
+a:hover {
+    text-decoration: underline;
+}
+.fa {
+    color: antiquewhite;
+    width: 12%;
+}
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="gallery">
+            <div class="gallery-item"><img src="images/IMG-20240106-WA0001.jpg" alt="Image 1"></div>
+            <div class="gallery-item"><img src="images/IMG-20240106-WA0002.jpg" alt="Image 2"></div>
+            <div class="gallery-item"><img src="images/IMG-20240106-WA0003.jpg" alt="Image 3"></div>
+            <div class="gallery-item"><img src="images/IMG-20240106-WA0004.jpg" alt="Image 4"></div>
+            <div class="gallery-item"><img src="images/IMG-20240106-WA0005.jpg" alt="Image 5"></div>
+            <div class="gallery-item"><img src="images/IMG-20240106-WA0006.jpg" alt="Image 6"></div>
+            <div class="gallery-item"><img src="images/IMG-20240106-WA0007.jpg" alt="Image 7"></div>
+            <div class="gallery-item"><img src="images/IMG-20240106-WA0008.jpg" alt="Image 8"></div>
+            <div class="gallery-item"><img src="images/IMG-20240106-WA0009.jpg" alt="Image 9"></div>
+    
+            <!-- Add more gallery items as needed -->
+        </div>
+
+        <div class="sidebar">
+            <h1> SHUTTER </h1>
+            <ul>
+                <h2> Home </h2>
+                <h3>About</h3>
+                <h3>Bio</h3>
+                <h3>Blog</h3>
+                <h3>Contact</h3>
+                <!-- Add more menu items as needed -->
+            </ul>
+            <span class="fa fa-facebook"></span>
+            <span class="fa fa-instagram"></span>
+            <span class="fa fa-twitter"></span>
+        </div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#content{
+    background-image: url(\../Image/homebg.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+    background-size: contain;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    background-repeat: no-repeat;
+    padding: 20px;
+    margin-left: 10%;
+    position: fixed;
+}
+
+.navbar{
+    margin-right: 10%;
+}
+
+.navbar ul{
+    list-style: none;  
+    position: fixed;
+    margin-left: 40%;
+    
+}
+
+.navbar li{
+    display: inline-block;
+    padding: 30px 10px;
+}
+
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 20px;
+   
+}
+
+.navbar ul li a:hover{
+    color: red;
+    border-bottom: 1px solid red;
+}
+
+.content-area{
+    display: block;
+    text-align: center;
+    margin-top: 250px;
+    color: #ffffff;
+}
+
+.content-area h3{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.content-area h1{
+    font-size: 42px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.separator:after {
+    position: absolute;
+    left: 5%;
+    bottom: 4px;
+    height: 1px;
+    width: 80px;
+    background: #eee;
+    content: "";
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.separator {
+    width: 10px;
+    height: 10px;
+    margin: 20px auto;
+    background: #e74c3c;
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+}
+.separator:before {
+    position: absolute;
+    right: 5%;
+    bottom: 4px;
+    height: 1px;
+    width: 80px;
+    background: #eee;
+    content: "";
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.content-area .information{
+    text-align: center;
+    display: block;
+    padding: 0% 25%;
+}
+
+.content-area .btn{
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.content-area .btn a{
+    color: #ffffff;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid white;
+    margin-bottom: 50px;
+}
+
+.content-area .btn a:hover{
+    background-color: red;
+    border: none;
+}
+
+.fa-arrow-down {
+    color: red;
+    background: white;
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid white;
+    margin-top: 9.4%;
+}
+
+.feature-section{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 8% 50px 8%;
+}
+
+.first-feature{
+    text-align: center;
+    margin: 10px;
+}
+
+.feature-icon{
+    border: 1px solid rgb(136, 136, 136);
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    margin: auto;
+    color: #e74c3c;
+}
+
+.first-feature h4{
+    text-transform: uppercase;
+    margin: 15px 0px 8px 0px;
+}
+
+.first-feature hr{
+    width: 20%;
+    margin: auto; 
+}
+
+.first-feature .content{
+    margin-top: 8px;
+}
+
+.feature-icon:hover{
+    border-color: #e74c3c;
+    transform: rotate(45deg);
+    transform: ease all 0.20s;
+}
+
+
+
+
