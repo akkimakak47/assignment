@@ -1,0 +1,203 @@
+MODULE (HTML-5)-3
+
+Q-1 The semantic elements added in HTML5 are:
+
+<article>
+<aside>
+<details>
+<figcaption>
+<figure>
+<footer>
+<header>
+<main>
+
+Q-2 How to embed audio and video in a webpage
+
+AUDIO:
+
+To embed audio in HTML, we use the <audio> tag. Before HTML5, audio cannot be added to web pages in the Internet Explorer era. To play audio, we used web plugins like Flash. After the release of HTML5, it is possible. This tag supports Chrome, Firefox, Safari, Opera, and Edge in three audio formats - MP3, WAV, OGG. Only Safari browser doesn’t support OGG audio format.
+
+ Syntax:
+    <audio>
+        <source src="file_name" type="audio_file_type">
+    </audio>
+ 
+ VIDEO:
+
+To embed video in HTML, we use the <video> tag. It contains one or more video sources at a time using <source> tag. It supports MP4, WebM, and Ogg in all modern browsers. Only Ogg video format doesn't support in Safari browser. 
+
+Syntax
+ <video>
+      <source src="file_name" type="video_file_type">
+ </video>
+
+ Q-3 Semantic element in HTML5?
+
+ Many web sites contain HTML code like: <div id="nav"> <div class="header"> <div id="footer"> to indicate navigation, header, and footer.
+
+In HTML there are some semantic elements that can be used to define different parts of a web page:  
+    
+    <article>
+    <aside>
+    <details>
+    <figcaption>
+    <figure>
+    <footer>
+    <header>
+    <main>
+    <mark>
+    <nav>
+    <section>
+    <summary>
+    <time>
+
+Q-4 Canvas and SVG in HTML tag
+
+canvas:
+
+The HTML <canvas> element is used to draw graphics, on the fly, via JavaScript.
+
+The <canvas> element is only a container for graphics. You must use JavaScript to actually draw the graphics.
+    
+Canvas has several methods for drawing paths, boxes, circles, text, and adding images.
+    
+Canvas is supported by all major browsers.
+
+SVG:
+
+The <svg> tag defines a container for SVG graphics.
+
+SVG has several methods for drawing paths, boxes, circles, text, and graphic images.
+    
+To learn more about SVG, please read our SVG Tutorial.
+    
+
+
+MODULE (JAVASCRIPT BASIC & DOM )-4
+
+
+Q-1 What is JavaScript
+
+JavaScript is the Programming Language for the Web.
+
+JavaScript can update and change both HTML and CSS.
+
+JavaScript can calculate, manipulate and validate data.
+
+
+Q-2 WAV is the use of NAN() function
+
+In JavaScript NaN is short for "Not-a-Number".
+
+The isNaN() method returns true if a value is NaN.
+
+The isNaN() method converts the value to a number before testing it.
+
+Q-3 What is nagative infinity?
+
+Number.NEGATIVE_INFINITY is a special numeric value that is returned when an arithmetic operation or mathematical function generates a negative value greater than the largest representable number in JavaScript (i.e., more negative than -Number.MAX_VALUE).
+
+JavaScript displays the NEGATIVE_INFINITY value as -Infinity. This value behaves mathematically like infinity; for example, anything multiplied by infinity is infinity, and anything divided by infinity is zero. In ECMAScript v1 and later, you can also use -Infinity instead of Number.NEGATIVE_INFINITY.
+
+
+Q-4 Which company developed javascript
+
+JavaScript was created at Netscape Communications by Brendan Eich in 1995. Netscape and Eich designed JavaScript as a scripting language for use with the company's flagship web browser, Netscape Navigator.
+
+
+Q-5 What are undeclared and undefined variables
+
+Undefined: It occurs when a variable has been declared but has not been assigned any value. Undefined is not a keyword. 
+
+Undeclared: It occurs when we try to access any variable that is not initialized or declared earlier using the var or const keyword. If we use 'typeof' operator to get the value of an undeclared variable, we will face the runtime error with the return value as "undefine". The scope of the undeclared variables is always global. 
+
+Q-6 Write the code for adding new elements dynamically
+
+Creation of new element: New elements can be created in JS by using the createElement() method.  
+
+Syntax:
+
+document.createElement("<tagName>");  
+// Where <tagName> can be any HTML 
+// tagName like div, ul, button, etc.
+
+// newDiv element has been created
+For Eg: let newDiv = document.createElement("div");
+
+Q-7 What is the difference between view state and session state
+VIEW STATE:
+
+Maintained at page level only.
+View state can only be visible from a single page and not multiple pages.
+It will retain values in the event of a postback operation occurring.
+Information is stored on the client's end only.
+used to allow the persistence of page-instance-specific data.
+
+SESSION STATE: 
+
+Maintained at session level.
+Session state value availability is across all pages available in a user session.
+In session state, user data remains in the server. Data is available to user until the browser is closed or there is session expiration.
+Information is stored on the server.
+used for the persistence of user-specific data on the server's end.
+
+Q-8 what is === operator in javascript
+
+The strict equality (===) operator checks whether its two operands are equal, returning a Boolean result. Unlike the equality operator, the strict equality operator always considers operands of different types to be different.
+
+Q-9 How can the style/class of an element be changed
+
+In this article, we will learn how we can change the style/class of an element. If you want to build a cool website or app then UI plays an important role. We can change, add or remove any CSS property from an HTML element on the occurrence of any event with the help of JavaScript. There are two common approaches that allow us to achieve this task.
+
+style.property
+Changing the class itself
+
+Q-10 How to read and write a file using javascript?
+
+On the client side, you can't read or write files in JavaScript browsers. The fs module in Node.js may be used to accomplish this on the server-side. It has methods for reading and writing files on the file system that are both synchronous and asynchronous. Let's demonstrate some examples of reading and writing files with the node.js fs module.
+
+The fs.readFile() and rs.writeFile() methods are used to read and write of a file using javascript. The file is read using the fs.readFile() function, which is an inbuilt method. This technique reads the full file into memory and stores it in a buffer. 
+
+Q-11 What are all the looping structures in javascript?
+
+for statement.
+do...while statement.
+while statement.
+labeled statement.
+break statement.
+continue statement.
+for...in statement.
+for...of statement.
+
+Q-12 How can you convert the string of any base to an integer in javascript?
+
+There's a function called parseInt() in JavaScript, this is used for parsing a string as an argument and it returns an integer of the specified radix (basically the base of the numerical system) as output.
+
+Q-13 What is the function of the delete operator?
+
+The delete operator removes a property from an object. If the property's value is an object and there are no more references to the object, the object held by that property is eventually released automatically.
+
+
+Q-14 what are all the types of pop up boxes available in javascript
+
+JavaScript has three kind of popup boxes: 
+
+Alert box
+Confirm box
+Prompt box.
+
+Q-15 what is the use of void (0)?
+
+The void operator evaluates an expression and returns undefined . By running void(0) in the URL JavaScript code, nothing is evaluated or returned.
+
+
+Q-16 how can a page be forced to load another page in javascript?
+
+Navigating to a new page can be done using window. location. assign() . By using assign() , the user will be able to get back to the landing page using the “back” button, as this does not change the browser's history.
+
+
+Q-17 what are the disadvantages of using innerhtml in javascript
+
+It is very slow because as inner HTML already parses the content even we have to parse the content again so that's why it takes time. When we have used the event handlers then the event handlers are not automatically attached to the new elements created by innerHTML.
+
+Q-18
