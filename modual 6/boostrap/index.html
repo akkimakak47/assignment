@@ -1,0 +1,461 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Bootstrap-1-Assignment-Home page Design</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script src='main.js'></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .logo {
+            font-weight: 500;
+        }
+
+        .nav-link {
+            margin-bottom: 0;
+            margin-left: 4%;
+        }
+
+        .nav-link li {
+            list-style: none;
+            display: inline-block;
+            padding: 5px 20px;
+        }
+
+        .nav-link li a {
+            text-decoration: none;
+        }
+
+        .mnvbr {
+            justify-content: space-between;
+        }
+
+        .d-flex {
+            margin-right: 2%;
+        }
+
+        .w-100 {
+            height: 550px;
+        }
+
+        .d-none {
+            text-align: end;
+        }
+
+        .cstom {
+            width: 150px;
+            height: 150px;
+            margin: auto;
+            margin-top: 6%;
+        }
+
+        .card-head-1 {
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+        .cnctnt {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 4%;
+            gap: 5px;
+        }
+
+        .row {
+            align-items: center;
+            height: fit-content;
+            margin-top: 3%;
+            margin-bottom: 3%;
+        }
+
+        .col-md-8 {
+            padding: 20px;
+        }
+
+        .cnct-1 {
+            width: 95%;
+            font-family: monospace;
+            color: gray;
+        }
+
+
+        .col-md-4 {
+            text-align: center;
+            padding: 0;
+        }
+
+        .hrzntl-1 {
+            margin-top: 2%;
+            border-top: 2px solid gray;
+            border-bottom: 2px solid gray;
+        }
+
+        .copy {
+            color: gray;
+        }
+
+        .copy a {
+            text-decoration: none;
+        }
+
+        .bkt {
+            text-align: end;
+        }
+
+        .bkt a {
+            text-decoration: none;
+        }
+
+        .gray {
+            color: gray;
+        }
+
+
+        @media only screen and (max-width: 766px) {
+
+            .mitesh {
+                margin-right: 2% !important;
+            }
+
+            .respo {
+                width: 100% !important;
+            }
+
+            .nav-link li {
+                display: block;
+            }
+
+            .nav-link {
+                margin-left: 0;
+            }
+
+            .w-100 {
+                height: 300px;
+            }
+
+            .cnctnt {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                margin-top: 4%;
+            }
+
+            .bkt {
+                text-align: center;
+            }
+
+            .copy {
+                text-align: center;
+            }
+
+
+            .d-flex {
+                padding: 18px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="nav navbar navbar-expand-md bg-dark mpr">
+
+        <div class="logo text-white ms-4 fs-4">Carousel</div>
+
+        <button type="button" class="navbar-toggler btn btn-sm border-0 bg-white m-0 p-0 mitesh"
+            data-bs-toggle="collapse" data-bs-target="#btncall">
+            <span class="navbar-toggler-icon text-dark bi bi-grid-3x3-gap fs-5 m-1 p-1"></span>
+        </button>
+
+        <div class="navbar-collapse collapse mnvbr" id="btncall">
+            <ul class="nav-link">
+                <li><a href="#" class="nav-itms text-white">Home</a></li>
+                <li><a href="#" class="nav-itms text-white">Link</a></li>
+                <li><a href="#" class="nav-itms gray">Disabled</a></li>
+            </ul>
+            <div class="input-grup d-flex">
+                <input type="text" placeholder="Search" class="form-control">
+                <button type="button" class="btn btn-outline-success ms-2">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="modal fade mt-5" id="rgfm" role="dialog">
+        <div class="modal-dialog w-1">
+            <div class="container modal-content mt-5 shadow w-1 p-5 respo bg-white">
+                <h2>Register Form
+                    <button type="button" class="btn btn-danger float-end" data-bs-dismiss="modal">X</button>
+                </h2>
+                <hr>
+                <form>
+                    <div class="input-group mt-3">
+                        <label class="list-group-item"><i class="bi bi-person-add"></i></label>
+                        <input type="text" name="firstname" class="form-control" placeholder="Firstname" required>
+                    </div>
+
+                    <div class="input-group mt-3">
+                        <label class="list-group-item"><i class="bi bi-person-add"></i></label>
+                        <input type="text" name="lastname" class="form-control" placeholder="Lastname" required>
+                    </div>
+
+                    <div class="input-group mt-3">
+                        <label class="list-group-item"><i class="bi bi-inbox"></i></label>
+                        <input type="text" name="email" class="form-control" placeholder="email" required>
+                    </div>
+
+                    <div class="input-group mt-3">
+                        <label class="list-group-item"><i class="bi bi-lock"></i></label>
+                        <input type="password" name="password" class="form-control" placeholder="Password" required>
+                    </div>
+
+                    <div class="input-group mt-3">
+                        <input type="file" name="photo" class="form-control" required>
+                    </div>
+
+                    <div class="input-group mt-3">
+                        <i class="bi bi-person-standing ms-2">Male</i>
+                        <input type="radio" name="gender" value="male" class="ms-2" checked>
+                        <i class="bi bi-person-standing-dress ms-3 ms-2">Female</i>
+                        <input type="radio" name="gender" value="female" class="ms-2">
+                    </div>
+
+                    <div class="input-group mt-3">
+                        <button type="submit" class="btn btn-sm bg-dark text-white">Register</button>
+                        <button type="reset" class="btn btn-sm bg-danger text-white ms-1">Reset</button>
+                    </div>
+
+                    <div class="input-grup mt-3">
+                        <b>Already have an account ? <a href="#" data-bs-toggle="modal" data-bs-target="#ottr">Login
+                                here</a></b>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="ottr" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content bg-white p-4">
+                <h2>login form
+                    <button type="button" class="btn btn-sm btn-danger float-end" data-bs-dismiss="modal">x</button>
+                </h2>
+                <hr>
+
+                <form>
+                    <div class="input-group mt-4">
+                        <label class="list-group-item"><i class="bi bi-inbox"></i></label>
+                        <input type="text" name="email" class="form-control" placeholder="email" required>
+                    </div>
+
+                    <div class="input-group mt-3">
+                        <label class="list-group-item"><i class="bi bi-lock"></i></label>
+                        <input type="password" name="password" class="form-control" placeholder="Password" required>
+                    </div>
+
+                    <div class="input-group mt-3">
+                        <button type="submit" class="btn btn-sm bg-dark text-white">Login</button>
+                        <b><a href="#" class="ms-2">Forger password</a></b>
+                    </div>
+
+                    <div class="input-grup mt-3">
+                        <b>don't have an account ? <a href="#">Login here</a></b>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========== Slider Start =========== -->
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/how-to-create-a-car-NewBlogCover.png"class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>One more for good measure</h5>
+                    <p>cras justo odio, dapibus ac facilisis in, egestas eget quam. Donic id elit non mi porta gravida
+                        at eget metus.</p>
+                    <p>Nullam id Dolor id nibh ultricies vehicula ut id elit.</p>
+                    <button type="button" class="btn btn-primary">Browse Gallery</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://img.freepik.com/free-photo/view-three-dimensional-car-with-simple-background_23-2150998578.jpg?size=626&ext=jpg&ga=GA1.1.1224184972.1714003200&semt=ais" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>One more for good measure</h5>
+                    <p>cras justo odio, dapibus ac facilisis in, egestas eget quam. Donic id elit non mi porta gravida
+                        at eget metus.</p>
+                    <p>Nullam id Dolor id nibh ultricies vehicula ut id elit.</p>
+                    <button type="button" class="btn btn-primary">Browse Gallery</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://c4.wallpaperflare.com/wallpaper/366/879/734/need-for-speed-need-for-speed-hot-pursuit-wallpaper-preview.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>One more for good measure</h5>
+                    <p>cras justo odio, dapibus ac facilisis in, egestas eget quam. Donic id elit non mi porta gravida
+                        at eget metus.</p>
+                    <p>Nullam id Dolor id nibh ultricies vehicula ut id elit.</p>
+                    <button type="button" class="btn btn-primary">Browse Gallery</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- =========== Slider End =========== -->
+
+    <!-- =========== Card Start ===========  -->
+
+    <div class="container-fluid w-80">
+        <div class="container cnctnt">
+            <div class="card mt-4" style="width: auto; text-align: center; margin: auto;">
+                <img src="https://c4.wallpaperflare.com/wallpaper/295/264/47/ktm-bikes-racing-hd-wallpaper-preview.jpg"
+                    class="card-img-top rounded-circle cstom" alt="...">
+                <div class="card-body">
+                    <div class="card-head-1">Heading</div>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem,
+                        deleniti veniam, dolores laudantium nulla voluptatem excepturi placeat, cumque quam ipsa
+                        molestiae molestias corrupti.</p>
+                    <button type="button" class="btn btn-large bg-secondary text-white">view more <i
+                            class="bi bi-chevron-double-right"></i> </button>
+                </div>
+            </div>
+
+            <div class="card mt-4" style="width: auto; text-align: center; margin: auto;">
+                <img src="https://c4.wallpaperflare.com/wallpaper/295/264/47/ktm-bikes-racing-hd-wallpaper-preview.jpg"
+                    class="card-img-top rounded-circle cstom" alt="...">
+                <div class="card-body">
+                    <div class="card-head-1">Heading</div>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem,
+                        deleniti veniam, dolores laudantium nulla voluptatem excepturi placeat, cumque quam ipsa
+                        molestiae molestias corrupti.</p>
+                    <button type="button" class="btn btn-large bg-secondary text-white">view more <i
+                            class="bi bi-chevron-double-right"></i> </button>
+                </div>
+            </div>
+
+            <div class="card mt-4" style="width: auto; text-align: center; margin: auto;">
+                <img src="https://c4.wallpaperflare.com/wallpaper/295/264/47/ktm-bikes-racing-hd-wallpaper-preview.jpg"
+                    class="card-img-top rounded-circle cstom" alt="...">
+                <div class="card-body">
+                    <div class="card-head-1">Heading</div>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem,
+                        deleniti veniam, dolores laudantium nulla voluptatem excepturi placeat, cumque quam ipsa
+                        molestiae molestias corrupti.</p>
+                    <button type="button" class="btn btn-large bg-secondary text-white"> view more <i
+                            class="bi bi-chevron-double-right"></i> </button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- =========== Card End ===========  -->
+
+    <!-- ========== horizontal card Start ========== -->
+
+    <div class="container hrzntl-1">
+        <div class="row">
+            <div class="col-md-8">
+                <p class="h3">First featurette heading. It'll <br> blow your mind.</p>
+                <p class="cnct-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint veritatis
+                    maxime ipsam expedita, ab quibusdam minima labore voluptatem commodi quaerat praesentium a qui cum
+                    non quod reiciendis accusamus reprehenderit! Architecto non quod reiciendis accusamus reprehenderit!
+                    Architecto.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="images/byke 3.jpeg" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== Card-2 ==========  -->
+
+    <div class="container hrzntl-1">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="images/byke 2.avif" class="img-fluid">
+            </div>
+            <div class="col-md-8">
+                <p class="h3">Oh yeah, it's that good. See <br> for yourself.</p>
+                <p class="cnct-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint veritatis
+                    maxime ipsam expedita, ab quibusdam minima labore voluptatem commodi quaerat praesentium a qui cum
+                    non quod reiciendis accusamus reprehenderit! Architecto non quod reiciendis accusamus reprehenderit!
+                    Architecto.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== Card-3 ==========  -->
+
+    <div class="container hrzntl-1">
+        <div class="row">
+            <div class="col-md-8">
+                <p class="h3">And lastly, this one. <br> Checkmate.</p>
+                <p class="cnct-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint veritatis
+                    maxime ipsam expedita, ab quibusdam minima labore voluptatem commodi quaerat praesentium a qui cum
+                    non quod reiciendis accusamus reprehenderit! Architecto non quod reiciendis accusamus reprehenderit!
+                    Architecto.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="images/byke 1.jpg" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== horizontal card End ========== -->
+
+    <!-- ========== footer Start ==========  -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 copy">© 2017-2018 Company, Inc. - <a href="#">Privacy - Tearms</a></div>
+            <div class="col-md-4 bkt"><a href="#">Back to top</a></div>
+        </div>
+    </div>
+
+    <!-- ========== footer End ==========  -->
+
+</body>
+
+</html>
+
