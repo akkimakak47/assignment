@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Question-20</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container
+        {
+            width: 100%;
+            height: 100vh;
+            background: #222;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important; 
+        }
+        .swiper
+        {
+            width: 80%;
+            height: fit-content;
+        }
+        
+       .swiper-slide img
+        {
+            width: 100%;  
+            height: 600px;       
+        }
+        .swiper .swiper-button-prev,  .swiper .swiper-button-next
+        {
+           color: white;
+           
+        }
+    </style>
+    
+</head>
+<body>
+
+    <!-- Question:20
+    
+              • Create a slider using JavaScript
+
+    -->
+    <div class="container">
+
+        
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              
+              <div class="swiper-slide"><img src="img/animal 1.jpeg"></div>
+              <div class="swiper-slide"><img src="img/animal 2.jpeg"></div>
+              <div class="swiper-slide"><img src="img/animal3.jpeg"></div>
+              <div class="swiper-slide"><img src="img/animal4.jpeg"></div>
+              <div class="swiper-slide"><img src="img/animal5.jpeg"></div>
+            </div>
+            
+            
+            
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+          
+          </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            Autoplay:{
+            delay:3000,
+            disableOnInteration: false,
+            },
+                // direction: 'vertical',
+            loop: true,
+
+     pagination: {
+       el: '.swiper-pagination',
+       clickable: true,
+  },
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+  },
+ 
+});
+    </script>
+
+    
+</body>
+</html>
